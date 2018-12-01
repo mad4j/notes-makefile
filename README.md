@@ -27,3 +27,24 @@ obj/%.o: src/%.s
 clean:
 	-rm -f $(LIB) $(OBJ)
 ```
+
+
+## Variable settings
+
+### Lazy set
+
+```VARIABLE = value```
+
+values within it are recursively expanded when the variable is used, not when it’s declared
+
+### Immediate set
+
+```VARIABLE := value```
+
+values within it are expanded at declaration time
+
+### Set if absent
+
+```VARIABLE ?= value```
+
+setting of a variable only if it doesn’t have a value

@@ -48,3 +48,10 @@ values within it are expanded at declaration time
 ```VARIABLE ?= value```
 
 setting of a variable only if it doesn’t have a value
+
+
+### Append value
+
+```VARIABLE += value```
+
+add more text to the value of a variable already defined
